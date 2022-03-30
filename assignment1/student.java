@@ -13,7 +13,7 @@ public class student {
 		
 		String connectionURL = "jdbc:mysql://localhost:3306/db1?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=TRUE&useSSL=FALSE";
 		
-		conn = DriverManager.getConnection(connectionURL, "root", "Nik.syahmi21");
+		conn = DriverManager.getConnection(connectionURL, "root", "Nikumaruku21");
 // Create a statement to retrieve objects
 		Statement s = conn.createStatement();
 // Retrieve results from the table
