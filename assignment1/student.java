@@ -22,14 +22,18 @@ public class student {
 		ResultSetMetaData rsmd = rs.getMetaData();
 		int i = rsmd.getColumnCount();
 		for (int j = 1; j <= i; j++) {
-			System.out.print(rsmd.getColumnName(j) + "\t");
-			System.out.print(" ");
+			System.out.print(rsmd.getColumnName(j) + "\t\t" );
+
 		}
+		System.out.println(" ");
 // Print records
 		while (rs.next()) {
-			for (int j = 1; j <= i; j++) {
-				System.out.print(rs.getString(j) + "\t");
+            int id = rs.getInt("id");
+            String name = rs.getString("name");
+            String department = rs.getString("department");
+            System.out.println(id + "\t\t" + name
+                               + "\t\t" + department);
 			}
 		}
 	}
-}
+
